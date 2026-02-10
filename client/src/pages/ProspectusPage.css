@@ -1,0 +1,51 @@
+.prospectus-page {
+  min-height: 100vh;
+  background: #eef2ee;
+  display: flex;
+  flex-direction: column;
+}
+
+.prospectus-toolbar {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(31, 63, 74, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.prospectus-back,
+.prospectus-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(31, 63, 74, 0.18);
+  color: #1f3f4a;
+  background: #ffffff;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.prospectus-back:hover,
+.prospectus-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(18, 40, 50, 0.14);
+}
+
+.prospectus-frame {
+  flex: 1;
+  padding: 12px 16px 24px;
+}
+
+.prospectus-frame iframe {
+  width: 100%;
+  height: calc(100vh - 90px);
+  border: none;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(18, 40, 50, 0.14);
+}
